@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="chrome" parallel="none">
+
+    <parameter name="os" value="windows"/>
+    <parameter name="site" value="http://www.ss.lv"/>
+    <parameter name="browserName" value="chrome"/>
+
+    <test name="addToBookmarks">
+        <classes>
+            <class name="cases.AddToBookmarks"></class>
+        </classes>
+    </test>
+</suite>
