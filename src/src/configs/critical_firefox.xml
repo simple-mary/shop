@@ -8,7 +8,7 @@
 
     <test name="addToBookmarks">
         <classes>
-            <class name="cases.AddToBookmarks"></class>
+            <class name="test_cases.AddToBookmarksTestCase"></class>
         </classes>
     </test>
 </suite>

@@ -3,9 +3,9 @@ package models;
 /**
  * Created by Perets on 26.07.2017.
  */
-public enum  Sections
+public enum Sections
 {
-    ELECTRONICS("ic6");
+    ELECTRONICS("/ru/electronics/");
 
     Sections(String p_value) {
         value = p_value;

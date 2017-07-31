@@ -31,7 +31,7 @@ public class TestModel
     }
 
     public String getSiteName() {
-        return os;
+        return siteName;
     }
 
     public TestModel setSiteName(String siteName) {

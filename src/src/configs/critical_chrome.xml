@@ -4,11 +4,11 @@
 
     <parameter name="os" value="windows"/>
     <parameter name="site" value="http://www.ss.lv"/>
-    <parameter name="browserName" value="chrome"/>
+    <parameter name="browserName" value="CHROME"/>
 
     <test name="addToBookmarks">
         <classes>
-            <class name="cases.AddToBookmarks"></class>
+            <class name="test_cases.AddToBookmarksTestCase"></class>
         </classes>
     </test>
 </suite>

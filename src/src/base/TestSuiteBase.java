@@ -12,23 +12,24 @@ import static models.TestModel.testModel;
  */
 public class TestSuiteBase
 {
-    public TestSuiteBase testSuiteBase;
-
-//    public TestSuiteBase()
-//    {
-//       testSuiteBase = new TestSuiteBase();
-//    }
-
-    @BeforeMethod
     @BeforeSuite
-    @BeforeTest
     @Parameters({"os", "site", "browserName"})
-    public void testBeforeSuiteInit(@Optional String p_os, @Optional String p_site, @Optional Browsers p_browser) {
-        Config cnf = new Config();
+    public void initBeforeSuite(@Optional String p_os, @Optional String p_site, @Optional Browsers p_browser) {
         // User Build
         testModel.setSiteName(p_site)
-        .setBrowserName(p_browser)
-        .setOs(p_os);
+                .setBrowserName(p_browser)
+                .setOs(p_os);
+        Config cnf = new Config();
+    }
+
+    @BeforeTest
+    public void initBeforeTest() {
         wd.runLocalBrowser(testModel.getBrowserName());
     }
+
+    @AfterTest
+    public void initAfterTest() {
+        wd.driver.quit();
+    }
+
 }
