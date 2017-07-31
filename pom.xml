@@ -25,6 +25,11 @@
             <artifactId>selenium-api</artifactId>
             <version>3.4.0</version>
         </dependency>
-    </dependencies>
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-chrome-driver</artifactId>
+            <version>3.4.0</version>
+        </dependency>
+     </dependencies>
 
 </project>
