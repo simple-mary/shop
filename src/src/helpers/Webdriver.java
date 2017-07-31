@@ -58,7 +58,6 @@ public class Webdriver
             default:
                 throw new TestException("Browser is not supported => " + p_browser);
         }
-
     }
 
     public void click(By p_locator) {
